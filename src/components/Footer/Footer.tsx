@@ -12,12 +12,14 @@ const Footer = () => {
     <section className="w-full text-white tracking-normal">
       <div className="container mx-auto rounded-t-[20%] flex flex-col gap-16 py-12 bg-neutral-800/80 sm:rounded-t-[148px] overflow-hidden text-wrap">
         <div>
-          <Image
-            src={fullLogo}
-            alt="Byte Buster Logo"
-            width={390}
-            className="mx-auto w-[80%] sm:w-[390px]"
-          />
+          <Link href="/">
+            <Image
+              src={fullLogo}
+              alt="Byte Buster Logo"
+              width={390}
+              className="mx-auto w-[80%] sm:w-[390px]"
+            />
+          </Link>
         </div>
         <div className="flex flex-col px-2 gap-16 lg:flex-row lg:justify-around sm:px-20">
           <ul className="flex flex-col gap-6 text-lg font-medium">
