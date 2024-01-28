@@ -1,0 +1,7 @@
+.cardWrapper {
+  &:hover {
+    bottom: 0 !important;
+    rotate: 0deg !important;
+    z-index: 10 !important;
+  }
+}
