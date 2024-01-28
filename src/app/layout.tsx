@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} text-black dark:text-white tracking-widest overflow-x-hidden`}
+        className={`${inter.className} text-black dark:text-white tracking-widest overflow-x-hidden dark`}
       >
         <ThemeProvider>
           <ThemeWrapper>
