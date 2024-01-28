@@ -8,12 +8,12 @@ import {
 } from "react";
 
 interface ThemeContextInterface {
-  isDarkTheme: boolean | undefined;
+  isDarkTheme: boolean;
   toggleThemeHandler: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextInterface>({
-  isDarkTheme: false,
+  isDarkTheme: true,
   toggleThemeHandler: () => {},
 });
 
@@ -29,13 +29,7 @@ const ThemeProvider = (props: ThemeProviderProps): ReactElement => {
   const [isDarkTheme, setIsDarkTheme] = useState<boolean>(true);
 
   const initialThemeHandler = useCallback(() => {
-    if (isLocalStorageEmpty()) {
-      const isUserPrefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)",
-      ).matches;
-      localStorage.setItem("isDarkTheme", `${isUserPrefersDark}`);
-      setIsDarkTheme(isUserPrefersDark);
-    } else {
+    if (!isLocalStorageEmpty()) {
       const isDarkTheme: boolean = JSON.parse(
         localStorage.getItem("isDarkTheme")!,
       );
