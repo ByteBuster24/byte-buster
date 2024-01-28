@@ -6,7 +6,10 @@ import CourseCard from "./CourseCard";
 
 const CoursesSection = () => {
   return (
-    <section className="w-full py-20 mb-40 bg-gradient-courses dark:bg-gradient-courses-dark backdrop-blur-xl">
+    <section
+      className="w-full py-20 mb-40 bg-gradient-courses dark:bg-gradient-courses-dark backdrop-blur-xl"
+      id="courses"
+    >
       <div className="container mx-auto flex flex-col items-center gap-8 lg:flex-row">
         <div className="primary-pane backdrop-blur-2xl w-full rounded-[60px] px-8 py-4 flex flex-row gap-6 items-center lg:justify-center lg:flex-col lg:w-[35%] lg:self-stretch">
           <div className="w-1/2 lg:w-fit">

@@ -13,7 +13,7 @@ interface PrimaryButtonProps {
 }
 
 const smallStyles = "px-3 py-0.5";
-const largeStyles = "px-4 py-2 text-base font-bold sm:px-10 sm:py-3";
+const largeStyles = "px-2 py-2 text-base font-bold sm:px-10 sm:py-3";
 
 const PrimaryButton: FC<PrimaryButtonProps> = ({
   isSmall,
@@ -26,7 +26,7 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
 }) => {
   const buttonStyles = useMemo(
     () =>
-      `block relative z-[1] rounded-md flex items-center text-center text-nowrap gap-3 ${
+      `block relative z-[1] rounded-md flex items-center text-center text-wrap gap-3 sm:text-nowrap ${
         isSmall ? smallStyles : largeStyles
       } ${
         theme === "dual"

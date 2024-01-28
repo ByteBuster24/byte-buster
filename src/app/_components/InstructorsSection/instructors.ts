@@ -3,7 +3,8 @@ import iainWhiteImg from "@/public/assets/home/mentors/iain_white.webp";
 import christianMwilaImg from "@/public/assets/home/mentors/christian_mwila.webp";
 import rituMaheshwariImg from "@/public/assets/home/mentors/ritu_maheshwari.webp";
 import garvitRajputImg from "@/public/assets/home/mentors/garvit_rajput.webp";
-import instructorImg from "@/public/assets/home/mentors/instructor.webp";
+import deepakPrakashImg from "@/public/assets/home/mentors/deepak_prakash.webp";
+import shivamSinghImg from "@/public/assets/home/mentors/shivam_singh.webp";
 
 interface InstructorType {
   name: string;
@@ -12,11 +13,16 @@ interface InstructorType {
 }
 
 const instructors: InstructorType[] = [
-  { name: "Iain White", img: iainWhiteImg, occupation: "CTO @ White Internet" },
+  {
+    name: "Iain White",
+    img: iainWhiteImg,
+    occupation: "CTO at MER Solutions Asia Pacific | Australia",
+  },
   {
     name: "Christian Mwila",
     img: christianMwilaImg,
-    occupation: "Executive Director & Return on Investment Head",
+    occupation:
+      "Executive Director, Senior Consultant at ZESCO | Washington US",
   },
   {
     name: "Dr. Ritu Maheshwari",
@@ -29,9 +35,15 @@ const instructors: InstructorType[] = [
     occupation: "Amazon, SDE in Moengage",
   },
   {
-    name: "More amazing Instructors Joining Soon...",
-    img: instructorImg,
-    occupation: "",
+    name: "Deepak Prakash",
+    img: deepakPrakashImg,
+    occupation: "IIT, Patna",
+  },
+  {
+    name: "Shivam Singh",
+    img: shivamSinghImg,
+    occupation:
+      "Crypto professional trader & android developer | youtuber | Influencer",
   },
 ];
 

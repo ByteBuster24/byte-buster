@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import deepakPrakashImg from "@/public/assets/home/testimonials/deepak_prakash.webp";
+import aditiBhuraniImg from "@/public/assets/home/testimonials/aditi_bhurani.webp";
 import saniaPingleImg from "@/public/assets/home/testimonials/sania_pingle.webp";
 import shikhaMandreImg from "@/public/assets/home/testimonials/shikha_mandre.webp";
 import ishwaShahImg from "@/public/assets/home/testimonials/ishwa_shah.webp";
@@ -21,11 +21,11 @@ export interface TestimonialType {
 const testimonials: TestimonialType[][] = [
   [
     {
-      name: "Deepak Prakash",
+      name: "Aditi Bhurani",
       message:
         "ByteBuster has been a game-changer for me! The programming concepts were explained in such a simple and effective manner that even a beginner like me could grasp them easily. Thanks to ByteBuster, coding is now my second language!",
-      img: deepakPrakashImg,
-      occupation: "IIT Patna",
+      img: aditiBhuraniImg,
+      occupation: "",
       rating: 5,
     },
     {
@@ -54,7 +54,7 @@ const testimonials: TestimonialType[][] = [
       rating: 5,
     },
     {
-      name: "Prashant",
+      name: "Prashant Ranjan Singh",
       message:
         "ByteBuster has truly simplified the coding process for me. The well-structured curriculum and constant support from the faculty have made learning programming an enjoyable experience. I highly recommend ByteBuster to anyone interested in coding.",
       img: prashantImg,
@@ -86,7 +86,7 @@ const testimonials: TestimonialType[][] = [
       rating: 5,
     },
     {
-      name: "Ayan",
+      name: "Ayan Tiwari",
       message:
         "ByteBuster exceeded my expectations in every way. The coaching institute simplified programming concepts, making them easy to understand. The mentors are not just teachers; they are guides who genuinely care about your success in the coding world.",
       img: ayanImg,

@@ -2,10 +2,10 @@ import Image from "next/image";
 import { MdPlayArrow } from "react-icons/md";
 import ActionButton from "@/components/ActionButton/ActionButton";
 import Marquee from "@/components/Marquee/Marquee";
+import InstructorCard from "./InstructorsCard";
 import lightningDarkIcon from "@/public/assets/icons/lightning-dark.svg";
 import gradientBall from "@/public/assets/home/instructors_gradient_ball.png";
 import instructors from "./instructors";
-import InstructorCard from "./InstructorsCard";
 
 const InstructorsSection = () => {
   return (
@@ -58,6 +58,7 @@ const InstructorsSection = () => {
           </div>
           <div className="w-full mb-20 h-80 lg:mb-0 lg:w-80 lg:h-[714px]">
             <Marquee
+              animationDuration={25000}
               slides={{ perView: "auto", spacing: 20 }}
               breakpoints={{
                 "(min-width: 1024px)": {

@@ -125,7 +125,7 @@ const Links = ({ containerStyles }: { containerStyles: string }) => {
         </SecondaryButton>
       </li>
       <li>
-        <SecondaryButton theme="dark" isLink href="/">
+        <SecondaryButton theme="dark" isLink href="/#courses">
           Services
         </SecondaryButton>
       </li>

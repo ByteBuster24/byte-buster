@@ -43,7 +43,7 @@ const ButtonBody: FC<ActionButtonProps> = ({ text, icon, isSmall }) => {
   return (
     <>
       <div
-        className={`relative z-[3] flex items-center text-nowrap gap-3 ${
+        className={`relative z-[3] flex items-center text-wrap gap-3 sm:text-nowrap ${
           isSmall ? smallStyles : largeStyles
         }`}
       >

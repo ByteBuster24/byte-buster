@@ -13,7 +13,7 @@ const InstructorCard: FC<InstructorCardProps> = ({ name, img, occupation }) => {
         className="min-h-full"
       />
       <div className="absolute bottom-1.5 w-full">
-        <div className="w-9/12 mx-auto bg-white flex flex-col gap-1 text-black text-center py-1">
+        <div className="w-9/12 mx-auto bg-white flex flex-col text-black text-center py-1">
           <p className="text-sm font-semibold">{name}</p>
           <p className="text-xs font-medium">{occupation}</p>
         </div>
