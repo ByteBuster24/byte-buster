@@ -44,7 +44,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex flex-col gap-6 lg:w-3/12">
+          <div className="flex flex-col gap-6 lg:w-4/12">
             <div>
               <h2 className="font-bold">Address:</h2>
               <p className="font-semibold">
@@ -62,12 +62,21 @@ const Footer = () => {
                 <p className="font-semibold">bytebuster23@gmail.com</p>
               </div>
             </div>
+            <div className="text-lg text-nowrap mt-5">
+              <p>An ISO certified Company.</p>
+            </div>
           </div>
-          <div className="flex justify-center items-center gap-2 lg:flex-col">
-            <Link href="/">
+          <div className="flex items-center gap-2 lg:flex-col">
+            <Link
+              href="https://www.linkedin.com/company/byte-buster-it-institute/"
+              target="_blank"
+            >
               <Image src={linkedInIcon} alt="LinkedIn Icon" width={38} />
             </Link>
-            <Link href="/">
+            <Link
+              href="https://www.instagram.com/byte_buster_institute/"
+              target="_blank"
+            >
               <Image
                 src={instagramIcon}
                 alt="LinkedIn Icon"
@@ -75,7 +84,10 @@ const Footer = () => {
                 className="-translate-x-1"
               />
             </Link>
-            <Link href="/">
+            <Link
+              href="https://www.facebook.com/profile.php?id=61554778721548&mibextid=JRoKGi"
+              target="_blank"
+            >
               <Image
                 src={facebookIcon}
                 alt="LinkedIn Icon"
@@ -83,8 +95,13 @@ const Footer = () => {
                 className="-translate-x-1"
               />
             </Link>
-            <Link href="/">
-              <Image src={youtubeIcon} alt="LinkedIn Icon" width={38} />
+            <Link href="https://www.youtube.com/@Byte_Buster" target="_blank">
+              <Image
+                src={youtubeIcon}
+                alt="LinkedIn Icon"
+                width={38}
+                className="-translate-x-0.5"
+              />
             </Link>
           </div>
         </div>
