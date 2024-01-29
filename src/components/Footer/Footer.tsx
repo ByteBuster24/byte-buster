@@ -9,7 +9,7 @@ import youtubeIcon from "@/public/assets/logo/youtube.svg";
 
 const Footer = () => {
   return (
-    <section className="w-full text-white tracking-normal">
+    <section className="w-full text-white tracking-normal" id="footer">
       <div className="container mx-auto rounded-t-[20%] flex flex-col gap-16 py-12 bg-neutral-800/80 sm:rounded-t-[148px] overflow-hidden text-wrap">
         <div>
           <Link href="/">

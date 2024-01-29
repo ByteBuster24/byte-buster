@@ -23,7 +23,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Babita Jha",
-    designation: "Chariman",
+    designation: "Chairman",
     img: babitaImg,
     link: "",
   },
