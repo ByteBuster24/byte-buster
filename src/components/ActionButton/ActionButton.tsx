@@ -5,7 +5,7 @@ import Link from "next/link";
 interface ActionButtonProps {
   isLink?: boolean;
   href?: string;
-  text: string;
+  children: string | number;
   isSmall?: boolean;
   icon?: ReactElement;
   handleClick?: () => void;
@@ -18,7 +18,7 @@ const ActionButton: FC<ActionButtonProps> = ({
   isSmall = false,
   isLink,
   href = "/",
-  text,
+  children,
   icon,
   handleClick = () => {},
 }) => {
@@ -27,19 +27,23 @@ const ActionButton: FC<ActionButtonProps> = ({
       href={href}
       className="inline-block w-fit relative group p-px overflow-hidden rounded-md"
     >
-      <ButtonBody text={text} isSmall={isSmall} icon={icon} />
+      <ButtonBody isSmall={isSmall} icon={icon}>
+        {children}
+      </ButtonBody>
     </Link>
   ) : (
     <button
       className="inline-block w-fit relative group p-px overflow-hidden rounded-md"
       onClick={handleClick}
     >
-      <ButtonBody text={text} isSmall={isSmall} icon={icon} />
+      <ButtonBody isSmall={isSmall} icon={icon}>
+        {children}
+      </ButtonBody>
     </button>
   );
 };
 
-const ButtonBody: FC<ActionButtonProps> = ({ text, icon, isSmall }) => {
+const ButtonBody: FC<ActionButtonProps> = ({ children, icon, isSmall }) => {
   return (
     <>
       <div
@@ -48,7 +52,7 @@ const ButtonBody: FC<ActionButtonProps> = ({ text, icon, isSmall }) => {
         }`}
       >
         {icon}
-        {text}
+        {children}
       </div>
 
       {/* Gradient */}

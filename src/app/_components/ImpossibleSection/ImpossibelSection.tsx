@@ -41,7 +41,7 @@ const ImpossibleSection = () => {
         </div>
         <div></div>
 
-        <ActionButton text="Join Byte Busters Now" icon={<MdPlayArrow />} />
+        <ActionButton icon={<MdPlayArrow />}>Join Byte Buster now</ActionButton>
       </div>
     </section>
   );

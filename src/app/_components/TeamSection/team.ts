@@ -11,7 +11,10 @@ interface MemberType {
   name: string;
   designation: string;
   img: StaticImageData;
-  link: string;
+  socials: {
+    linkedIn?: string;
+    instagram?: string;
+  };
 }
 
 const teamMembers: MemberType[] = [
@@ -19,43 +22,53 @@ const teamMembers: MemberType[] = [
     name: "Ajay Jha",
     designation: "Chairman",
     img: ajayImg,
-    link: "",
+    socials: {},
   },
   {
     name: "Babita Jha",
     designation: "Chairman",
     img: babitaImg,
-    link: "",
+    socials: {},
   },
   {
     name: "Sakshi Jha",
     designation: "Founder, CEO",
     img: sakshiImg,
-    link: "https://www.linkedin.com/in/sakshi-sonam-jha-98519b223/",
+    socials: {
+      linkedIn: "https://www.linkedin.com/in/sakshi-sonam-jha-98519b223/",
+    },
   },
   {
     name: "Sarthak Punasiya",
     designation: "COO, CMO",
     img: sarthakImg,
-    link: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
+    socials: {
+      linkedIn: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
+    },
   },
   {
     name: "Lokesh Ojha",
     designation: "CFO, MD",
     img: lokeshImg,
-    link: "https://www.linkedin.com/in/lokesh-vishwakarma-ba1aa720a/",
+    socials: {
+      linkedIn: "https://www.linkedin.com/in/lokesh-vishwakarma-ba1aa720a/",
+    },
   },
   {
     name: "Dishika Yadav",
     designation: "CAO, MD",
     img: dishikaImg,
-    link: "https://www.linkedin.com/in/dishika-yadav-81882b262/",
+    socials: {
+      linkedIn: "https://www.linkedin.com/in/dishika-yadav-81882b262/",
+    },
   },
   {
     name: "Aryan Kumar",
     designation: "CTO",
     img: aryanImg,
-    link: "https://www.linkedin.com/in/aryan-kumar-7574b5228/",
+    socials: {
+      linkedIn: "https://www.linkedin.com/in/aryan-kumar-7574b5228/",
+    },
   },
 ];
 

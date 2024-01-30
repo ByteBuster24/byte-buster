@@ -5,7 +5,7 @@ import Link from "next/link";
 interface PrimaryButtonProps {
   isLink?: boolean;
   href?: string;
-  text: string;
+  children: string | number;
   isSmall?: boolean;
   theme?: "dual" | "dark" | "light";
   icon?: ReactElement;
@@ -19,7 +19,7 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
   isSmall,
   isLink,
   href,
-  text,
+  children,
   theme = "dual",
   icon,
   handleClick,
@@ -56,11 +56,12 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
       className="inline-block relative group p-px overflow-hidden rounded-md w-fit"
     >
       <ButtonBody
-        text={text}
         buttonStyles={buttonStyles}
         borderStyles={borderStyles}
         icon={icon}
-      />
+      >
+        {children}
+      </ButtonBody>
     </Link>
   ) : (
     <button
@@ -68,23 +69,24 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
       onClick={handleClick}
     >
       <ButtonBody
-        text={text}
         buttonStyles={buttonStyles}
         borderStyles={borderStyles}
         icon={icon}
-      />
+      >
+        {children}
+      </ButtonBody>
     </button>
   );
 };
 
 type ButtonBodyProps = PrimaryButtonProps & {
-  text: string;
+  children: string | number;
   buttonStyles: string;
   borderStyles: string;
 };
 
 const ButtonBody: FC<ButtonBodyProps> = ({
-  text,
+  children,
   buttonStyles,
   borderStyles,
   icon,
@@ -93,7 +95,7 @@ const ButtonBody: FC<ButtonBodyProps> = ({
     <>
       <div className={buttonStyles}>
         {icon}
-        {text}
+        {children}
       </div>
       <div className={borderStyles} />
     </>
