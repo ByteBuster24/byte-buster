@@ -36,6 +36,7 @@ const teamMembers: MemberType[] = [
     img: sakshiImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sakshi-sonam-jha-98519b223/",
+      instagram: "https://www.instagram.com/sakshijha.ai/",
     },
   },
   {
@@ -44,6 +45,7 @@ const teamMembers: MemberType[] = [
     img: sarthakImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
+      instagram: "https://www.instagram.com/sarthakpunasiya/",
     },
   },
   {
@@ -52,6 +54,7 @@ const teamMembers: MemberType[] = [
     img: lokeshImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/lokesh-vishwakarma-ba1aa720a/",
+      instagram: "https://www.instagram.com/lokesh_ojha_402/",
     },
   },
   {
@@ -60,6 +63,7 @@ const teamMembers: MemberType[] = [
     img: dishikaImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/dishika-yadav-81882b262/",
+      instagram: "https://www.instagram.com/_dishikayadav/",
     },
   },
   {
