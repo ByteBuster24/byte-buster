@@ -18,7 +18,12 @@ const HeroSection = () => {
             <ActionButton isLink href="/#courses">
               Explore our courses
             </ActionButton>
-            <PrimaryButton isLink href="/" icon={<MdPlayArrow />}>
+            <PrimaryButton
+              icon={<MdPlayArrow />}
+              isLink
+              href="https://wa.me/9131555202"
+              target="_blank"
+            >
               Join Byte Buster Now
             </PrimaryButton>
           </div>

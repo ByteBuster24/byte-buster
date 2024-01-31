@@ -65,7 +65,12 @@ const AboutUs = () => {
             shape a successful and fulfilling career in the ever-evolving
             landscape of technology and beyond.
           </p>
-          <ActionButton icon={<MdPlayArrow />}>
+          <ActionButton
+            isLink
+            href="https://wa.me/9131555202"
+            target="_blank"
+            icon={<MdPlayArrow />}
+          >
             Join Byte Buster Now
           </ActionButton>
         </div>

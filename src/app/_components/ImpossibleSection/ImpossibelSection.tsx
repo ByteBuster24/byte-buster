@@ -41,7 +41,14 @@ const ImpossibleSection = () => {
         </div>
         <div></div>
 
-        <ActionButton icon={<MdPlayArrow />}>Join Byte Buster now</ActionButton>
+        <ActionButton
+          icon={<MdPlayArrow />}
+          isLink
+          href="https://wa.me/9131555202"
+          target="_blank"
+        >
+          Join Byte Buster now
+        </ActionButton>
       </div>
     </section>
   );

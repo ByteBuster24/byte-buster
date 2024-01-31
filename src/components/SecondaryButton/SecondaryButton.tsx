@@ -1,10 +1,11 @@
 "use client";
-import { FC, useMemo } from "react";
+import { useMemo, FC, HTMLAttributeAnchorTarget } from "react";
 import Link from "next/link";
 
 interface SecondaryButtonProps {
   isLink?: boolean;
   href?: string;
+  target?: HTMLAttributeAnchorTarget;
   theme?: "dark" | "light" | "dual";
   children: string;
   handleClick?: () => void;
@@ -12,7 +13,8 @@ interface SecondaryButtonProps {
 
 const SecondaryButton: FC<SecondaryButtonProps> = ({
   isLink,
-  href,
+  href = "/",
+  target,
   children,
   theme = "dual",
   handleClick,
@@ -38,7 +40,7 @@ const SecondaryButton: FC<SecondaryButtonProps> = ({
   return (
     <div className="relative w-fit group rounded-md p-px overflow-hidden">
       {isLink ? (
-        <Link className={buttonStyles} href={href || "/"}>
+        <Link className={buttonStyles} href={href} target={target}>
           {children}
         </Link>
       ) : (

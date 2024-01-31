@@ -1,10 +1,11 @@
 "use client";
-import { FC, ReactElement, useMemo } from "react";
+import { useMemo, FC, ReactElement, HTMLAttributeAnchorTarget } from "react";
 import Link from "next/link";
 
 interface PrimaryButtonProps {
   isLink?: boolean;
   href?: string;
+  target?: HTMLAttributeAnchorTarget;
   children: string | number;
   isSmall?: boolean;
   theme?: "dual" | "dark" | "light";
@@ -18,7 +19,8 @@ const largeStyles = "px-2 py-2 text-base font-bold sm:px-10 sm:py-3";
 const PrimaryButton: FC<PrimaryButtonProps> = ({
   isSmall,
   isLink,
-  href,
+  href = "/",
+  target,
   children,
   theme = "dual",
   icon,
@@ -50,9 +52,10 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
     [theme],
   );
 
-  return isLink && href ? (
+  return isLink ? (
     <Link
       href={href}
+      target={target}
       className="inline-block relative group p-px overflow-hidden rounded-md w-fit"
     >
       <ButtonBody

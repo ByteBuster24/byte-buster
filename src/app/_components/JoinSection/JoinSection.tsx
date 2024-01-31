@@ -17,7 +17,12 @@ const JoinSection = () => {
             flexibility and freedom you deserve as a topdeveloper.
           </p>
           <div className="hidden lg:block">
-            <ActionButton icon={<MdPlayArrow />}>
+            <ActionButton
+              icon={<MdPlayArrow />}
+              isLink
+              href="https://wa.me/9131555202"
+              target="_blank"
+            >
               Join Byte Buster Now
             </ActionButton>
           </div>
