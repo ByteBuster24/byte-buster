@@ -1,4 +1,4 @@
-import TeamCard from "@/components/TeamCard/TeamCard";
+import TeamCard from "./TeamCard/TeamCard";
 import Carousel from "@/components/Carousel/Carousel";
 import teamMembers from "./team";
 

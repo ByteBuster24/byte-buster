@@ -1,10 +1,11 @@
 "use client";
-import { FC, ReactElement } from "react";
+import { FC, ReactElement, HTMLAttributeAnchorTarget } from "react";
 import Link from "next/link";
 
 interface ActionButtonProps {
   isLink?: boolean;
   href?: string;
+  target?: HTMLAttributeAnchorTarget;
   children: string | number;
   isSmall?: boolean;
   icon?: ReactElement;
@@ -18,6 +19,7 @@ const ActionButton: FC<ActionButtonProps> = ({
   isSmall = false,
   isLink,
   href = "/",
+  target,
   children,
   icon,
   handleClick = () => {},
@@ -25,6 +27,7 @@ const ActionButton: FC<ActionButtonProps> = ({
   return isLink && href ? (
     <Link
       href={href}
+      target={target}
       className="inline-block w-fit relative group p-px overflow-hidden rounded-md"
     >
       <ButtonBody isSmall={isSmall} icon={icon}>

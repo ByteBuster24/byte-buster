@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import ThemeWrapper from "@/components/BackgroundWrapper/ThemeWrapper";
-import Header from "@/components/Header/Header";
+import BackgroundWrapper from "@/components/BackgroundWrapper/ThemeWrapper";
+import Header from "./_components/Header/Header";
+import Footer from "./_components/Footer/Footer";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import Footer from "@/components/Footer/Footer";
 
 import "./globals.scss";
 
@@ -26,11 +26,11 @@ export default function RootLayout({
         className={`${inter.className} text-black dark:text-white tracking-widest overflow-x-hidden dark bg-slate-950`}
       >
         <ThemeProvider>
-          <ThemeWrapper>
+          <BackgroundWrapper>
             <Header />
             {children}
             <Footer />
-          </ThemeWrapper>
+          </BackgroundWrapper>
         </ThemeProvider>
       </body>
     </html>

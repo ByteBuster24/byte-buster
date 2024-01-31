@@ -21,7 +21,12 @@ const InstructorsSection = () => {
               as well.
             </h2>
           </div>
-          <ActionButton icon={<MdPlayArrow />}>
+          <ActionButton
+            icon={<MdPlayArrow />}
+            isLink
+            href="https://wa.me/9131555202"
+            target="_blank"
+          >
             Join Byte Buster Now
           </ActionButton>
         </header>
