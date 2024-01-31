@@ -21,7 +21,9 @@ const InstructorsSection = () => {
               as well.
             </h2>
           </div>
-          <ActionButton text="Join Byte Busters Now" icon={<MdPlayArrow />} />
+          <ActionButton icon={<MdPlayArrow />}>
+            Join Byte Buster Now
+          </ActionButton>
         </header>
         <main className="secondary-pane px-0 flex flex-col justify-evenly lg:rounded-[60px] lg:px-16 lg:flex-row">
           <div className="flex flex-col gap-12 px-5 py-14 lg:gap-16 lg:py-20 sm:px-8 lg:px-0">
@@ -82,14 +84,14 @@ const InstructorsSection = () => {
       <div className="absolute top-[15%] -left-80 lg:top-0">
         <Image
           src={gradientBall}
-          alt="Byte Busters asset"
+          alt="Byte Buster asset"
           className="w-[600px] lg:w-[850px]"
         />
       </div>
       <div className="absolute -bottom-[10%] -right-56 lg:-bottom-1/4">
         <Image
           src={gradientBall}
-          alt="Byte Busters asset"
+          alt="Byte Buster asset"
           className="w-[600px] lg:w-[850px]"
         />
       </div>

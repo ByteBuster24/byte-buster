@@ -15,13 +15,12 @@ const HeroSection = () => {
             </h1>
           </div>
           <div className="flex flex-col items-center gap-8 lg:gap-4 lg:flex-row">
-            <ActionButton text="Explore our courses" />
-            <PrimaryButton
-              isLink
-              href="/"
-              text="Join Byte Busters Now"
-              icon={<MdPlayArrow />}
-            />
+            <ActionButton isLink href="/#courses">
+              Explore our courses
+            </ActionButton>
+            <PrimaryButton isLink href="/" icon={<MdPlayArrow />}>
+              Join Byte Buster Now
+            </PrimaryButton>
           </div>
         </div>
         <div className="w-9/12 md:w-8/12 lg:w-[40%]">

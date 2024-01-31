@@ -47,7 +47,7 @@ const Header = () => {
         <Link href="/">
           <Image
             src={brandFullLogo}
-            alt="ByteBusters Logo"
+            alt="Byte Buster Logo"
             width={250}
             height={70}
             className="w-40 sm:w-56 md:w-64"
@@ -79,12 +79,16 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className="items-center gap-4 xl:gap-8 hidden lg:flex">
-          <SecondaryButton theme="dark" isLink href="/">
-            Login
-          </SecondaryButton>
-          <PrimaryButton href="/" theme="dark" text="Join Now" isLink isSmall />
-        </div>
+        {/*
+          <div className="items-center gap-4 xl:gap-8 hidden lg:flex">
+            <SecondaryButton theme="dark" isLink href="/">
+              Login
+            </SecondaryButton>
+            <PrimaryButton href="/" theme="dark" isLink isSmall>
+              Join Now
+            </PrimaryButton>
+          </div>
+        */}
       </nav>
       <div
         className={`container mx-auto overflow-hidden duration-500 ease-in-out lg:hidden ${
@@ -93,18 +97,16 @@ const Header = () => {
       >
         <div className="flex justify-around pb-8 md:justify-normal">
           <Links containerStyles="flex flex-col gap-4 md:w-1/2" />
-          <div className="flex flex-col gap-4 md:w-1/2">
-            <SecondaryButton theme="dark" isLink href="/">
-              Login
-            </SecondaryButton>
-            <PrimaryButton
-              href="/"
-              theme="dark"
-              text="Join Now"
-              isLink
-              isSmall
-            />
-          </div>
+          {/*
+            <div className="flex flex-col gap-4 md:w-1/2">
+              <SecondaryButton theme="dark" isLink href="/">
+                Login
+              </SecondaryButton>
+              <PrimaryButton href="/" theme="dark" isLink isSmall>
+                Join Now
+              </PrimaryButton>
+            </div>
+          */}
         </div>
       </div>
     </header>

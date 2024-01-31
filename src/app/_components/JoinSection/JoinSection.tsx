@@ -17,7 +17,9 @@ const JoinSection = () => {
             flexibility and freedom you deserve as a topdeveloper.
           </p>
           <div className="hidden lg:block">
-            <ActionButton text="Join Byte Busters Now" icon={<MdPlayArrow />} />
+            <ActionButton icon={<MdPlayArrow />}>
+              Join Byte Buster Now
+            </ActionButton>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const CoursesSection = () => {
           <div className="w-1/2 lg:w-fit">
             <Image
               src={coursesIcon}
-              alt="ByteBusters courses icon"
+              alt="Byte Buster courses icon"
               width={315}
             />
           </div>
