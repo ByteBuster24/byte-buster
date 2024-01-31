@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import useScrollDirection from "@/hooks/useScrollDirection";
 import Image from "next/image";
 import Link from "next/link";
-import ThemeToggler from "../ThemeToggler/ThemeToggler";
-import SecondaryButton from "../SecondaryButton/SecondaryButton";
-import PrimaryButton from "../PrimaryButton/PrimaryButton";
+import ThemeToggler from "@/components/ThemeToggler/ThemeToggler";
+import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
+import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 
 import brandFullLogo from "@/public/assets/logo/logo-full.webp";
 
