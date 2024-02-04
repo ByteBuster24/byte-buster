@@ -1,3 +1,4 @@
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import BackgroundWrapper from "@/components/BackgroundWrapper/ThemeWrapper";
@@ -33,6 +34,7 @@ export default function RootLayout({
           </BackgroundWrapper>
         </ThemeProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-5PKJJ3DF" />
     </html>
   );
 }

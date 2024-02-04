@@ -2,6 +2,7 @@ import Image from "next/image";
 import { MdPlayArrow } from "react-icons/md";
 import checkDarkIcon from "@/public/assets/icons/check-dark.svg";
 import ActionButton from "@/components/ActionButton/ActionButton";
+import { whatsappLink, whatsappMsg } from "@/constants/constants";
 
 const ImpossibleSection = () => {
   return (
@@ -44,7 +45,7 @@ const ImpossibleSection = () => {
         <ActionButton
           icon={<MdPlayArrow />}
           isLink
-          href="https://wa.me/9131555202"
+          href={`${whatsappLink}?text=${whatsappMsg}`}
           target="_blank"
         >
           Join Byte Buster now

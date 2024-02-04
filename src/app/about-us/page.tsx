@@ -2,6 +2,7 @@ import ActionButton from "@/components/ActionButton/ActionButton";
 import Marquee from "@/components/Marquee/Marquee";
 import { MdPlayArrow } from "react-icons/md";
 import { slideData, gridData } from "./data";
+import { whatsappLink, whatsappMsg } from "@/constants/constants";
 
 const AboutUs = () => {
   return (
@@ -63,7 +64,7 @@ const AboutUs = () => {
           </p>
           <ActionButton
             isLink
-            href="https://wa.me/9131555202"
+            href={`${whatsappLink}?text=${whatsappMsg}`}
             target="_blank"
             icon={<MdPlayArrow />}
           >

@@ -1,6 +1,7 @@
 import { MdPlayArrow } from "react-icons/md";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import ActionButton from "@/components/ActionButton/ActionButton";
+import { whatsappLink, whatsappMsg } from "@/constants/constants";
 
 const HeroSection = () => {
   return (
@@ -21,7 +22,7 @@ const HeroSection = () => {
             <PrimaryButton
               icon={<MdPlayArrow />}
               isLink
-              href="https://wa.me/9131555202"
+              href={`${whatsappLink}?text=${whatsappMsg}`}
               target="_blank"
             >
               Join Byte Buster Now
