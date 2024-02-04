@@ -2,7 +2,11 @@ import Image from "next/image";
 import { MdPlayArrow } from "react-icons/md";
 import checkDarkIcon from "@/public/assets/icons/check-dark.svg";
 import ActionButton from "@/components/ActionButton/ActionButton";
-import { whatsappLink, whatsappMsg } from "@/constants/constants";
+import {
+  WHATSAPP_LINK,
+  WHATSAPP_MSG,
+  EnumTagEvents,
+} from "@/constants/constants";
 
 const ImpossibleSection = () => {
   return (
@@ -45,8 +49,10 @@ const ImpossibleSection = () => {
         <ActionButton
           icon={<MdPlayArrow />}
           isLink
-          href={`${whatsappLink}?text=${whatsappMsg}`}
+          href={`${WHATSAPP_LINK}?text=${WHATSAPP_MSG}`}
           target="_blank"
+          addTagEvent
+          tagEventValue={EnumTagEvents["JOIN-BTN"]}
         >
           Join Byte Buster now
         </ActionButton>

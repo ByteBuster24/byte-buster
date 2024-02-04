@@ -1,7 +1,11 @@
 import { MdPlayArrow } from "react-icons/md";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
 import ActionButton from "@/components/ActionButton/ActionButton";
-import { whatsappLink, whatsappMsg } from "@/constants/constants";
+import {
+  WHATSAPP_LINK,
+  WHATSAPP_MSG,
+  EnumTagEvents,
+} from "@/constants/constants";
 
 const HeroSection = () => {
   return (
@@ -16,14 +20,21 @@ const HeroSection = () => {
             </h1>
           </div>
           <div className="flex flex-col items-center gap-8 lg:gap-4 lg:flex-row">
-            <ActionButton isLink href="/#courses">
+            <ActionButton
+              isLink
+              href="/#courses"
+              addTagEvent
+              tagEventValue={EnumTagEvents["EXPLORE-COURSES"]}
+            >
               Explore our courses
             </ActionButton>
             <PrimaryButton
               icon={<MdPlayArrow />}
               isLink
-              href={`${whatsappLink}?text=${whatsappMsg}`}
+              href={`${WHATSAPP_LINK}?text=${WHATSAPP_MSG}`}
               target="_blank"
+              addTagEvent
+              tagEventValue={EnumTagEvents["JOIN-BTN"]}
             >
               Join Byte Buster Now
             </PrimaryButton>

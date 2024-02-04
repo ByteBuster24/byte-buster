@@ -2,7 +2,11 @@ import ActionButton from "@/components/ActionButton/ActionButton";
 import Marquee from "@/components/Marquee/Marquee";
 import { MdPlayArrow } from "react-icons/md";
 import { slideData, gridData } from "./data";
-import { whatsappLink, whatsappMsg } from "@/constants/constants";
+import {
+  EnumTagEvents,
+  WHATSAPP_LINK,
+  WHATSAPP_MSG,
+} from "@/constants/constants";
 
 const AboutUs = () => {
   return (
@@ -64,9 +68,11 @@ const AboutUs = () => {
           </p>
           <ActionButton
             isLink
-            href={`${whatsappLink}?text=${whatsappMsg}`}
+            href={`${WHATSAPP_LINK}?text=${WHATSAPP_MSG}`}
             target="_blank"
             icon={<MdPlayArrow />}
+            addTagEvent
+            tagEventValue={EnumTagEvents["JOIN-BTN"]}
           >
             Join Byte Buster Now
           </ActionButton>

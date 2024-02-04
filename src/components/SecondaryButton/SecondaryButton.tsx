@@ -1,5 +1,7 @@
 "use client";
 import { useMemo, FC, HTMLAttributeAnchorTarget } from "react";
+import { sendGTMEvent } from "@next/third-parties/google";
+import { EnumTagEvents } from "@/constants/constants";
 import Link from "next/link";
 
 interface SecondaryButtonProps {
@@ -8,6 +10,8 @@ interface SecondaryButtonProps {
   target?: HTMLAttributeAnchorTarget;
   theme?: "dark" | "light" | "dual";
   children: string;
+  addTagEvent?: boolean;
+  tagEventValue?: EnumTagEvents;
   handleClick?: () => void;
 }
 
@@ -17,7 +21,9 @@ const SecondaryButton: FC<SecondaryButtonProps> = ({
   target,
   children,
   theme = "dual",
-  handleClick,
+  addTagEvent = false,
+  tagEventValue = EnumTagEvents["BTN-CLICKED"],
+  handleClick = () => {},
 }) => {
   const buttonStyles = useMemo(
     () =>
@@ -40,11 +46,26 @@ const SecondaryButton: FC<SecondaryButtonProps> = ({
   return (
     <div className="relative w-fit group rounded-md p-px overflow-hidden">
       {isLink ? (
-        <Link className={buttonStyles} href={href} target={target}>
+        <Link
+          className={buttonStyles}
+          href={href}
+          target={target}
+          onClick={() =>
+            addTagEvent &&
+            sendGTMEvent({ event: "buttonClicked", value: tagEventValue })
+          }
+        >
           {children}
         </Link>
       ) : (
-        <button className={buttonStyles} onClick={handleClick}>
+        <button
+          className={buttonStyles}
+          onClick={() => {
+            handleClick();
+            addTagEvent &&
+              sendGTMEvent({ event: "buttonClicked", value: tagEventValue });
+          }}
+        >
           {children}
         </button>
       )}

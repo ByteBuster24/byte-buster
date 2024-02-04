@@ -6,7 +6,11 @@ import InstructorCard from "./InstructorsCard";
 import lightningDarkIcon from "@/public/assets/icons/lightning-dark.svg";
 import gradientBall from "@/public/assets/home/instructors_gradient_ball.png";
 import instructors from "./instructors";
-import { whatsappLink, whatsappMsg } from "@/constants/constants";
+import {
+  EnumTagEvents,
+  WHATSAPP_LINK,
+  WHATSAPP_MSG,
+} from "@/constants/constants";
 
 const InstructorsSection = () => {
   return (
@@ -25,8 +29,10 @@ const InstructorsSection = () => {
           <ActionButton
             icon={<MdPlayArrow />}
             isLink
-            href={`${whatsappLink}?text=${whatsappMsg}`}
+            href={`${WHATSAPP_LINK}?text=${WHATSAPP_MSG}`}
             target="_blank"
+            addTagEvent
+            tagEventValue={EnumTagEvents["JOIN-BTN"]}
           >
             Join Byte Buster Now
           </ActionButton>
