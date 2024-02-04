@@ -6,6 +6,7 @@ import InstructorCard from "./InstructorsCard";
 import lightningDarkIcon from "@/public/assets/icons/lightning-dark.svg";
 import gradientBall from "@/public/assets/home/instructors_gradient_ball.png";
 import instructors from "./instructors";
+import { whatsappLink, whatsappMsg } from "@/constants/constants";
 
 const InstructorsSection = () => {
   return (
@@ -24,7 +25,7 @@ const InstructorsSection = () => {
           <ActionButton
             icon={<MdPlayArrow />}
             isLink
-            href="https://wa.me/9131555202"
+            href={`${whatsappLink}?text=${whatsappMsg}`}
             target="_blank"
           >
             Join Byte Buster Now
