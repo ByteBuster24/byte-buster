@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import useScrollDirection from "@/hooks/useScrollDirection";
+import { EnumTagEvents } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggler from "@/components/ThemeToggler/ThemeToggler";
@@ -81,10 +82,23 @@ const Header = () => {
         </div>
         {/*
           <div className="items-center gap-4 xl:gap-8 hidden lg:flex">
-            <SecondaryButton theme="dark" isLink href="/">
+            <SecondaryButton
+              theme="dark"
+              isLink
+              href="/"
+              addTagEvent
+              tagEventValue={EnumTagEvents["LOGIN-BTN"]}
+            >
               Login
             </SecondaryButton>
-            <PrimaryButton href="/" theme="dark" isLink isSmall>
+            <PrimaryButton
+              href="/"
+              theme="dark"
+              isLink
+              isSmall
+              addTagEvent
+              tagEventValue={EnumTagEvents["SIGNUP-BTN"]}
+            >
               Join Now
             </PrimaryButton>
           </div>
@@ -99,10 +113,23 @@ const Header = () => {
           <Links containerStyles="flex flex-col gap-4 md:w-1/2" />
           {/*
             <div className="flex flex-col gap-4 md:w-1/2">
-              <SecondaryButton theme="dark" isLink href="/">
+              <SecondaryButton
+                theme="dark"
+                isLink
+                href="/"
+                addTagEvent
+                tagEventValue={EnumTagEvents["LOGIN-BTN"]}
+              >
                 Login
               </SecondaryButton>
-              <PrimaryButton href="/" theme="dark" isLink isSmall>
+              <PrimaryButton
+                href="/"
+                theme="dark"
+                isLink
+                isSmall
+                addTagEvent
+                tagEventValue={EnumTagEvents["SIGNUP-BTN"]}
+              >
                 Join Now
               </PrimaryButton>
             </div>
@@ -117,22 +144,46 @@ const Links = ({ containerStyles }: { containerStyles: string }) => {
   return (
     <ul className={containerStyles}>
       <li>
-        <SecondaryButton theme="dark" isLink href="/">
+        <SecondaryButton
+          theme="dark"
+          isLink
+          href="/"
+          addTagEvent
+          tagEventValue={EnumTagEvents["HOME-BTN"]}
+        >
           Home
         </SecondaryButton>
       </li>
       <li>
-        <SecondaryButton theme="dark" isLink href="/about-us">
+        <SecondaryButton
+          theme="dark"
+          isLink
+          href="/about-us"
+          addTagEvent
+          tagEventValue={EnumTagEvents["ABOUT_US-BTN"]}
+        >
           About Us
         </SecondaryButton>
       </li>
       <li>
-        <SecondaryButton theme="dark" isLink href="/#courses">
+        <SecondaryButton
+          theme="dark"
+          isLink
+          href="/#courses"
+          addTagEvent
+          tagEventValue={EnumTagEvents["EXPLORE-COURSES"]}
+        >
           Services
         </SecondaryButton>
       </li>
       <li>
-        <SecondaryButton theme="dark" isLink href="/#footer">
+        <SecondaryButton
+          theme="dark"
+          isLink
+          href="/#footer"
+          addTagEvent
+          tagEventValue={EnumTagEvents["FOOTER-BTN"]}
+        >
           Contact
         </SecondaryButton>
       </li>

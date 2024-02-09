@@ -1,6 +1,10 @@
 import { MdPlayArrow } from "react-icons/md";
 import ActionButton from "@/components/ActionButton/ActionButton";
-import { whatsappLink, whatsappMsg } from "@/constants/constants";
+import {
+  EnumTagEvents,
+  WHATSAPP_LINK,
+  WHATSAPP_MSG,
+} from "@/constants/constants";
 
 const JoinSection = () => {
   return (
@@ -21,8 +25,10 @@ const JoinSection = () => {
             <ActionButton
               icon={<MdPlayArrow />}
               isLink
-              href={`${whatsappLink}?text=${whatsappMsg}`}
+              href={`${WHATSAPP_LINK}?text=${WHATSAPP_MSG}`}
               target="_blank"
+              addTagEvent
+              tagEventValue={EnumTagEvents["JOIN-BTN"]}
             >
               Join Byte Buster Now
             </ActionButton>

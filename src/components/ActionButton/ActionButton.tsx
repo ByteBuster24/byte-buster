@@ -1,5 +1,7 @@
 "use client";
 import { FC, ReactElement, HTMLAttributeAnchorTarget } from "react";
+import { sendGTMEvent } from "@next/third-parties/google";
+import { EnumTagEvents } from "@/constants/constants";
 import Link from "next/link";
 
 interface ActionButtonProps {
@@ -9,6 +11,8 @@ interface ActionButtonProps {
   children: string | number;
   isSmall?: boolean;
   icon?: ReactElement;
+  addTagEvent?: boolean;
+  tagEventValue?: EnumTagEvents;
   handleClick?: () => void;
 }
 
@@ -22,12 +26,18 @@ const ActionButton: FC<ActionButtonProps> = ({
   target,
   children,
   icon,
+  addTagEvent = false,
+  tagEventValue = EnumTagEvents["BTN-CLICKED"],
   handleClick = () => {},
 }) => {
   return isLink && href ? (
     <Link
       href={href}
       target={target}
+      onClick={() =>
+        addTagEvent &&
+        sendGTMEvent({ event: "buttonClicked", value: tagEventValue })
+      }
       className="inline-block w-fit relative group p-px overflow-hidden rounded-md"
     >
       <ButtonBody isSmall={isSmall} icon={icon}>
@@ -37,7 +47,11 @@ const ActionButton: FC<ActionButtonProps> = ({
   ) : (
     <button
       className="inline-block w-fit relative group p-px overflow-hidden rounded-md"
-      onClick={handleClick}
+      onClick={() => {
+        handleClick();
+        addTagEvent &&
+          sendGTMEvent({ event: "buttonClicked", value: tagEventValue });
+      }}
     >
       <ButtonBody isSmall={isSmall} icon={icon}>
         {children}

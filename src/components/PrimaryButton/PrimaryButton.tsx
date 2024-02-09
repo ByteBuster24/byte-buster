@@ -1,5 +1,7 @@
 "use client";
 import { useMemo, FC, ReactElement, HTMLAttributeAnchorTarget } from "react";
+import { sendGTMEvent } from "@next/third-parties/google";
+import { EnumTagEvents } from "@/constants/constants";
 import Link from "next/link";
 
 interface PrimaryButtonProps {
@@ -10,6 +12,8 @@ interface PrimaryButtonProps {
   isSmall?: boolean;
   theme?: "dual" | "dark" | "light";
   icon?: ReactElement;
+  addTagEvent?: boolean;
+  tagEventValue?: EnumTagEvents;
   handleClick?: () => void;
 }
 
@@ -24,7 +28,9 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
   children,
   theme = "dual",
   icon,
-  handleClick,
+  addTagEvent = false,
+  tagEventValue = EnumTagEvents["BTN-CLICKED"],
+  handleClick = () => {},
 }) => {
   const buttonStyles = useMemo(
     () =>
@@ -57,6 +63,10 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
       href={href}
       target={target}
       className="inline-block relative group p-px overflow-hidden rounded-md w-fit"
+      onClick={() =>
+        addTagEvent &&
+        sendGTMEvent({ event: "buttonClicked", value: tagEventValue })
+      }
     >
       <ButtonBody
         buttonStyles={buttonStyles}
@@ -69,7 +79,11 @@ const PrimaryButton: FC<PrimaryButtonProps> = ({
   ) : (
     <button
       className="relative group p-px overflow-hidden rounded-md"
-      onClick={handleClick}
+      onClick={() => {
+        handleClick();
+        addTagEvent &&
+          sendGTMEvent({ event: "buttonClicked", value: tagEventValue });
+      }}
     >
       <ButtonBody
         buttonStyles={buttonStyles}
