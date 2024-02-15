@@ -23,7 +23,7 @@ const Header = () => {
     };
     setScrollPosition();
     window.addEventListener("scroll", setScrollPosition);
-    () => {
+    return () => {
       window.removeEventListener("scroll", setScrollPosition);
     };
   }, []);
