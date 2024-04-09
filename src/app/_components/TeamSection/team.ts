@@ -1,11 +1,12 @@
-import { StaticImageData } from "next/image";
 import ajayImg from "@/public/assets/home/team/Ajay.webp";
 import babitaImg from "@/public/assets/home/team/Babita.webp";
+import dishikaImg from "@/public/assets/home/team/Dishika.webp";
+import lokeshImg from "@/public/assets/home/team/Lokesh.webp";
+import rehantImg from "@/public/assets/home/team/Rehant.webp";
 import sakshiImg from "@/public/assets/home/team/Sakshi.webp";
 import sarthakImg from "@/public/assets/home/team/Sarthak.webp";
-import lokeshImg from "@/public/assets/home/team/Lokesh.webp";
-import dishikaImg from "@/public/assets/home/team/Dishika.webp";
-import aryanImg from "@/public/assets/home/team/Aryan.webp";
+import harshImg from "@/public/assets/home/team/Harsh.webp";
+import { StaticImageData } from "next/image";
 
 interface MemberType {
   name: string;
@@ -41,7 +42,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Sarthak Punasiya",
-    designation: "COO, CMO",
+    designation: "CMO",
     img: sarthakImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
@@ -50,7 +51,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Lokesh Ojha",
-    designation: "CFO, MD",
+    designation: "CFO",
     img: lokeshImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/lokesh-vishwakarma-ba1aa720a/",
@@ -59,7 +60,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Dishika Yadav",
-    designation: "CAO, MD",
+    designation: "CAO",
     img: dishikaImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/dishika-yadav-81882b262/",
@@ -67,12 +68,16 @@ const teamMembers: MemberType[] = [
     },
   },
   {
-    name: "Aryan Kumar",
-    designation: "CTO",
-    img: aryanImg,
-    socials: {
-      linkedIn: "https://www.linkedin.com/in/aryan-kumar-7574b5228/",
-    },
+    name: "Rehant Roy",
+    designation: "MD",
+    img: rehantImg,
+    socials: {},
+  },
+  {
+    name: "Harsh Soni",
+    designation: "COO",
+    img: harshImg,
+    socials: {},
   },
 ];
 

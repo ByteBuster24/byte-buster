@@ -64,7 +64,7 @@ const cardStyles: CardStylesType[] = [
     zIndex: 9,
     background: "bg-pink-400",
     bottom: "-7%",
-    left: "13%",
+    left: "10%",
     rotate: "-3deg",
   },
   // Babita Jha
@@ -72,7 +72,7 @@ const cardStyles: CardStylesType[] = [
     zIndex: 7,
     background: "bg-violet-500",
     bottom: "-11%",
-    left: "45%",
+    left: "38%",
     rotate: "-2.77deg",
   },
   // Sakshi Jha
@@ -80,7 +80,7 @@ const cardStyles: CardStylesType[] = [
     zIndex: 8,
     background: "bg-amber-400",
     bottom: "-14%",
-    left: "29%",
+    left: "24%",
     rotate: "8.4deg",
   },
   // Sarthak Punasiya
@@ -96,24 +96,32 @@ const cardStyles: CardStylesType[] = [
     zIndex: 7,
     background: "bg-pink-400",
     bottom: "-21%",
-    left: "71%",
-    rotate: "12.52deg",
+    left: "63%",
+    rotate: "5.5deg",
   },
   // Dishika Yadav
   {
     zIndex: 6,
     background: "bg-amber-400",
     bottom: "-3%",
-    left: "59%",
+    left: "52%",
     rotate: "10deg",
   },
-  // Aryan Kumar
+  // Rehant Roy
   {
     zIndex: 4,
     background: "bg-violet-500",
-    bottom: "-14%",
+    bottom: "-3%",
+    left: "75%",
+    rotate: "9.8deg",
+  },
+  // Harsh Soni
+  {
+    zIndex: 5,
+    background: "bg-violet-500",
+    bottom: "-25%",
     left: "85%",
-    rotate: "-9.8deg",
+    rotate: "15.8deg",
   },
 ];
 
