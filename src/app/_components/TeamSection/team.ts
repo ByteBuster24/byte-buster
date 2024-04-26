@@ -79,6 +79,18 @@ const teamMembers: MemberType[] = [
     img: harshImg,
     socials: {},
   },
+  {
+    name: "Jasneet Singh",
+    designation: "CTO",
+    img: harshImg,
+    socials: {},
+  },
+  {
+    name: "Prateek Soni",
+    designation: "CAO",
+    img: harshImg,
+    socials: {},
+  },
 ];
 
 export default teamMembers;
