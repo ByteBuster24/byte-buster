@@ -6,6 +6,8 @@ import rehantImg from "@/public/assets/home/team/Rehant.webp";
 import sakshiImg from "@/public/assets/home/team/Sakshi.webp";
 import sarthakImg from "@/public/assets/home/team/Sarthak.webp";
 import harshImg from "@/public/assets/home/team/Harsh.webp";
+import pratikImg from "@/public/assets/home/team/Pratik.jpg";
+import jasneetImg from "@/public/assets/home/team/Jasneet.png";
 import { StaticImageData } from "next/image";
 
 interface MemberType {
@@ -42,7 +44,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Sarthak Punasiya",
-    designation: "CMO",
+    designation: "CAO",
     img: sarthakImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
@@ -59,9 +61,9 @@ const teamMembers: MemberType[] = [
     },
   },
   {
-    name: "Dishika Yadav",
-    designation: "CAO",
-    img: dishikaImg,
+    name: "Pratik Soni",
+    designation: "COO & CAO",
+    img: pratikImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/dishika-yadav-81882b262/",
       instagram: "https://www.instagram.com/_dishikayadav/",
@@ -74,9 +76,9 @@ const teamMembers: MemberType[] = [
     socials: {},
   },
   {
-    name: "Harsh Soni",
-    designation: "COO",
-    img: harshImg,
+    name: "Jasneet Singh",
+    designation: "CMO",
+    img: jasneetImg,
     socials: {},
   },
 ];
