@@ -44,7 +44,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Sarthak Punasiya",
-    designation: "CAO",
+    designation: "CAO & CMO",
     img: sarthakImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
