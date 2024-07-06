@@ -7,7 +7,7 @@ import sakshiImg from "@/public/assets/home/team/Sakshi.webp";
 import sarthakImg from "@/public/assets/home/team/Sarthak.webp";
 import harshImg from "@/public/assets/home/team/Harsh.webp";
 import pratikImg from "@/public/assets/home/team/Pratik.jpg";
-import jasneetImg from "@/public/assets/home/team/Jasneet.png";
+//import jasneetImg from "@/public/assets/home/team/Jasneet.png";
 import { StaticImageData } from "next/image";
 
 interface MemberType {
@@ -65,8 +65,8 @@ const teamMembers: MemberType[] = [
     designation: "COO & CAO",
     img: pratikImg,
     socials: {
-      linkedIn: "https://www.linkedin.com/in/dishika-yadav-81882b262/",
-      instagram: "https://www.instagram.com/_dishikayadav/",
+      linkedIn: "https://www.linkedin.com/in/2002-prateek-soni/",
+      instagram: "https://www.instagram.com/soni_prateek02?igsh=aWZna3BmczhscW1m",
     },
   },
   {
@@ -75,12 +75,12 @@ const teamMembers: MemberType[] = [
     img: rehantImg,
     socials: {},
   },
-  {
-    name: "Jasneet Singh",
-    designation: "CMO",
-    img: jasneetImg,
-    socials: {},
-  },
+  // {
+  //   name: "Jasneet Singh",
+  //   designation: "CMO",
+  //   img: jasneetImg,
+  //   socials: {},
+  // },
 ];
 
 export default teamMembers;
