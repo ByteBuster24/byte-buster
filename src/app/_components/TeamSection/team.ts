@@ -39,7 +39,7 @@ const teamMembers: MemberType[] = [
     img: sakshiImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sakshi-sonam-jha-98519b223/",
-      instagram: "https://www.instagram.com/sakshijha.ai/",
+      instagram: "https://www.instagram.com/sakshijha_pvt/",
     },
   },
   {
