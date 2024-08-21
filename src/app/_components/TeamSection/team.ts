@@ -53,7 +53,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Lokesh Ojha",
-    designation: "",
+    designation: "CFO",
     img: lokeshImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/lokesh-vishwakarma-ba1aa720a/",
