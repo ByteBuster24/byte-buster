@@ -44,7 +44,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Sarthak Punasiya",
-    designation: "CAO & CMO",
+    designation: "",
     img: sarthakImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/sarthak-punasiya-59aa6b250/",
@@ -53,7 +53,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Lokesh Ojha",
-    designation: "CFO",
+    designation: "",
     img: lokeshImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/lokesh-vishwakarma-ba1aa720a/",
@@ -62,7 +62,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Pratik Soni",
-    designation: "COO & CAO",
+    designation: "",
     img: pratikImg,
     socials: {
       linkedIn: "https://www.linkedin.com/in/2002-prateek-soni/",
@@ -71,7 +71,7 @@ const teamMembers: MemberType[] = [
   },
   {
     name: "Rehant Roy",
-    designation: "MD",
+    designation: "",
     img: rehantImg,
     socials: {},
   },
