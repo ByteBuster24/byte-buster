@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import useScrollDirection from "@/hooks/useScrollDirection";
-import { EnumTagEvents } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
 import ThemeToggler from "@/components/ThemeToggler/ThemeToggler";
