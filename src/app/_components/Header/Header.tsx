@@ -7,6 +7,11 @@ import Link from "next/link";
 import ThemeToggler from "@/components/ThemeToggler/ThemeToggler";
 import SecondaryButton from "@/components/SecondaryButton/SecondaryButton";
 import PrimaryButton from "@/components/PrimaryButton/PrimaryButton";
+import {
+  WHATSAPP_LINK,
+  WHATSAPP_MSG,
+  EnumTagEvents,
+} from "@/constants/constants";
 
 import brandFullLogo from "@/public/assets/logo/logo-full.webp";
 
