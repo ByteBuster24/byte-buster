@@ -180,7 +180,7 @@ const Links = ({ containerStyles }: { containerStyles: string }) => {
         <SecondaryButton
           theme="dark"
           isLink
-          href="/#footer"
+          href={`${WHATSAPP_LINK}?text=${WHATSAPP_MSG}`}
           addTagEvent
           tagEventValue={EnumTagEvents["FOOTER-BTN"]}
         >
